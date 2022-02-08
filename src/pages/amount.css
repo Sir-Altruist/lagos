@@ -1,0 +1,150 @@
+.amountContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: calc(100vh - 50px) 50px;
+}
+
+.subcontain {
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#submitButton {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(0, 128, 0, 0.774);
+  border: none;
+  margin-top: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+#submitButton:hover {
+  background-color: rgba(0, 128, 0, 0.623);
+  cursor: pointer;
+}
+
+.payment-heading {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.title-heading {
+  font-size: 23px;
+  font-weight: 600;
+  /* word-spacing: 0px; */
+  letter-spacing: 3px;
+  font-family: monospace;
+  color: rgb(85, 84, 84);
+  text-decoration: underline;
+}
+
+#submitform {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subfields {
+  width: 100%;
+  /* background-color: rgb(255, 187, 0); */
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subfields > label {
+  font-family: monospace;
+  font-size: 15px;
+  color: rgb(85, 84, 84);
+}
+
+.amountfield {
+  width: calc(400px-20px);
+  padding: 10px;
+  background-color: whitesmoke;
+  border: none;
+  /* border: 1px solid #888; */
+  border-radius: 5px;
+  outline: none;
+  font-family: courier;
+  margin-top: 5px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: rgba(136, 136, 136, 0.801);
+  font-family: courier;
+}
+
+#viewInvoice {
+  font-family: monospace;
+  font-size: 15px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  height: 30px;
+  padding: 5px;
+  width: fit-content;
+  font-weight: 600;
+}
+
+#viewInvoice:hover {
+  color: red;
+  text-decoration: underline;
+  box-shadow: rgb(41 41 41 / 6%) 2px 2px 4px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subcontain {
+    width: 65vw;
+    height: 580px;
+  }
+
+  #submitButton {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .subcontain {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .payment-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #submitButton {
+    margin-top: 20px;
+  }
+
+  #submitform {
+    /* background-color: aqua; */
+    margin-top: 30px;
+  }
+
+  .title-heading {
+    letter-spacing: 1px;
+  }
+}
