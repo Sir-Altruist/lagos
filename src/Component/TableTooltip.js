@@ -3,14 +3,14 @@ import { Button, Toolbar, Typography } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 import PropTypes from "prop-types";
 
-const TableToolbar = ({ numSelected, generatePin }) => {
+const TableToolbar = ({ click, generatePin }) => {
   return (
     <Toolbar
-      style={{ marginTop: "3rem" }}
+      className={click ? "toolbar-1" : "toolbar-2"}
       sx={{
         pl: { sm: 2 },
         pr: { xs: 1, sm: 1 },
-        ...(numSelected > 0 && {
+        ...(click > 0 && {
           bgcolor: (theme) =>
             alpha(
               theme.palette.success.main,
@@ -19,18 +19,18 @@ const TableToolbar = ({ numSelected, generatePin }) => {
         }),
       }}
     >
-      {numSelected > 0 && (
+      {click > 0 && (
         <Typography
           sx={{ flex: "1 1 100%" }}
           color="inherit"
           variant="subtitle1"
           component="div"
         >
-          {numSelected} selected
+          {click} selected
         </Typography>
       )}
 
-      {numSelected > 0 && (
+      {click > 0 && (
         <div style={{ marginRight: "3rem" }}>
           <Button
             variant="contained"
@@ -48,7 +48,7 @@ const TableToolbar = ({ numSelected, generatePin }) => {
 };
 
 TableToolbar.propTypes = {
-  numSelected: PropTypes.number.isRequired,
+  click: PropTypes.number.isRequired,
 };
 
 export default TableToolbar;

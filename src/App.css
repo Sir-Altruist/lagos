@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-.headbutton{
+.headbutton {
   width: 100%;
   height: 40px;
   background-color: aqua;
   margin-top: 20px;
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
-#newbutt1{
+#newbutt1 {
   width: 50%;
   height: 100%;
   border: none;
@@ -22,17 +22,17 @@
   font-size: 16px;
   cursor: pointer;
   font-family: monospace;
-  font-Weight: 600;
-  background-color: #34A56F;
-  color: white
+  font-weight: 600;
+  background-color: #34a56f;
+  color: white;
 }
 
-#newbutt1:hover{
+#newbutt1:hover {
   background-color: #34a56e9c;
   color: white;
 }
 
-#newbutt11{
+#newbutt11 {
   width: 50%;
   height: 100%;
   border: none;
@@ -41,17 +41,17 @@
   font-size: 16px;
   cursor: pointer;
   font-family: monospace;
-  font-Weight: 600;
-  background-color: #368BC1;
-  color: white
+  font-weight: 600;
+  background-color: #368bc1;
+  color: white;
 }
 
-#newbutt11:hover{
+#newbutt11:hover {
   background-color: #368cc191;
   color: white;
 }
 
-#newbutt2{
+#newbutt2 {
   width: 50%;
   height: 100%;
   border: none;
@@ -60,16 +60,16 @@
   font-size: 16px;
   cursor: pointer;
   font-family: monospace;
-  font-Weight: 600;
-  color: #34A56F;
+  font-weight: 600;
+  color: #34a56f;
 }
 
-#newbutt2:hover{
+#newbutt2:hover {
   background-color: rgb(228, 224, 224);
-  color: #34A56F;
+  color: #34a56f;
 }
 
-#newbutt22{
+#newbutt22 {
   width: 50%;
   height: 100%;
   border: none;
@@ -78,20 +78,26 @@
   font-size: 16px;
   cursor: pointer;
   font-family: monospace;
-  font-Weight: 600;
-  color: #368BC1;
+  font-weight: 600;
+  color: #368bc1;
 }
 
-#newbutt22:hover{
+#newbutt22:hover {
   background-color: rgb(228, 224, 224);
-  color: #368BC1;
+  color: #368bc1;
 }
 
 /* landing page */
-.landing, .bece, .public {
+.landing,
+.bece,
+.public {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(225, 225, 225, 0.95), rgba(225, 225, 225, 0.9)), url('./images/lagos-1.jpg');
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.95),
+      rgba(225, 225, 225, 0.9)
+    ),
+    url("./images/lagos-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +105,11 @@
 .model {
   width: 100%;
   min-height: 160vh;
-  background: linear-gradient(rgba(225, 225, 225, 0.95), rgba(225, 225, 225, 0.9)), url('./images/lagos-1.jpg');
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.95),
+      rgba(225, 225, 225, 0.9)
+    ),
+    url("./images/lagos-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +124,11 @@
 .bece-update {
   width: 100%;
   min-height: 150vh;
-  background: linear-gradient(rgba(225, 225, 225, 0.95), rgba(225, 225, 225, 0.9)), url('./images/lagos-1.jpg');
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.95),
+      rgba(225, 225, 225, 0.9)
+    ),
+    url("./images/lagos-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,7 +139,10 @@
   margin: 3rem auto;
   border: 2px solid green;
 }
-.bece-card, .junior-card, .public-card, .model-card {
+.bece-card,
+.junior-card,
+.public-card,
+.model-card {
   width: 70%;
   min-height: 80vh;
   position: absolute;
@@ -133,24 +150,26 @@
   right: 15%;
   left: 15%;
   display: flex;
-  border: 1px solid #34A56F
+  border: 1px solid #34a56f;
 }
 .junior-card {
-  border: 1px solid #368BC1
+  border: 1px solid #368bc1;
 }
-.model-card, .public-card {
-  border: 1px solid #34A56F;
+.model-card,
+.public-card {
+  border: 1px solid #34a56f;
 }
 
 .landing-btn {
   width: 10rem;
   height: 5rem;
-  background-color: #7f77d8!important;
-  font-weight: bold!important;
-  text-transform: inherit!important;
+  background-color: #7f77d8 !important;
+  font-weight: bold !important;
+  text-transform: inherit !important;
 }
-.landing-btn:hover, .landing-link:hover {
-  background-color: #6056D7!important;
+.landing-btn:hover,
+.landing-link:hover {
+  background-color: #6056d7 !important;
 }
 .landing-link {
   color: #ffffff;
@@ -160,38 +179,70 @@
 /* Forms */
 .bece-form-left {
   width: 55%;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 .bece-form-right {
   width: 45%;
-  background-color: #34A56F;
+  background-color: #34a56f;
 }
 .junior-form-right {
   width: 45%;
-  background-color: #368BC1;
+  background-color: #368bc1;
 }
 .model-form-right {
   width: 45%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./images/student.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./images/student.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .public-form-right {
   width: 45%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./images/public.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./images/public.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bece-form-field {
-  margin-bottom: .5rem!important;
+  margin-bottom: 0.5rem !important;
 }
 .plane {
   color: #ffffff;
-  font-size: 10rem!important;
+  font-size: 10rem !important;
   animation: bottom-to-top 5s alternate-reverse ease-in infinite;
- 
+}
+.admin,
+.bulk {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(225, 225, 225, 0.95),
+      rgba(225, 225, 225, 0.9)
+    ),
+    url("./images/lagos-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.toolbar-1 {
+  margin-top: 1rem;
+}
+.toolbar-2 {
+  margin-top: 0;
+}
+.bulk {
+  display: flex;
+}
+.bulk-card {
+  width: 40%;
+  min-height: 60vh;
+  margin: 3rem auto;
+  border: 2px solid rgb(97, 144, 167);
+}
+.bulk-form {
+  margin: 3rem auto;
 }
 
 @keyframes bottom-to-top {
@@ -205,12 +256,13 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .landing, .bece {
+  .landing,
+  .bece {
     position: relative;
-    min-height: 150vh!important;
+    min-height: 150vh !important;
   }
   .landing {
-    min-height: 170vh!important;
+    min-height: 170vh !important;
   }
   .bece-update {
     width: 100%;
@@ -222,30 +274,42 @@
   }
   .landing-card {
     width: 100%;
-    min-height: 70vh!important;
+    min-height: 70vh !important;
     border: 2px solid green;
-    margin-bottom: 5rem!important;
+    margin-bottom: 5rem !important;
   }
   .landing-btn {
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem !important;
   }
-  .bece-card, .junior-card, .public-card, .model-card {
+  .bece-card,
+  .junior-card,
+  .public-card,
+  .model-card {
     width: 100%;
     position: absolute;
     left: 0;
   }
   .junior-card {
-    border: 1px solid #368BC1
+    border: 1px solid #368bc1;
   }
-  .model-card, .public-card {
-    border: 1px solid #34A56F;
+  .model-card,
+  .public-card {
+    border: 1px solid #34a56f;
   }
   .bece-form-left {
     width: 100%;
   }
-  .bece-form-right, .junior-form-right, .model-form-right, .public-form-right {
+  .bece-form-right,
+  .junior-form-right,
+  .model-form-right,
+  .public-form-right {
     width: 0;
     display: none;
   }
-
+  .bulk-card {
+    width: 80%;
+    min-height: 60vh;
+    margin: 3rem auto;
+    border: 2px solid rgb(97, 144, 167);
+  }
 }

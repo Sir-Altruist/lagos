@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Amount from "./pages/amount";
@@ -8,6 +8,7 @@ import Junior from "./pages/forms/Junior";
 import Model from "./pages/forms/Model";
 import Public from "./pages/forms/Public";
 import Admin2 from "./pages/Admin2";
+import Bulk from "./pages/Bulk";
 // import Confirmation2 from "./pages/confimation2";
 // import Confirmation3 from "./pages/confirmation3";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/requisition/model" element={<Model />} />
           <Route path="/requisition/public" element={<Public />} />
           <Route path="/admin" element={<Admin2 />} />
+          <Route path="/bulk" element={<Bulk />} />
         </Routes>
       </Router>
     </div>

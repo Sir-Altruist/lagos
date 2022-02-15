@@ -3,7 +3,7 @@ import BasicTable from "../Component/table/BasicTable";
 
 const Admin2 = () => {
   return (
-    <div>
+    <div className="admin">
       <BasicTable />
     </div>
   );

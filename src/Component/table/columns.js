@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const COLUMNS = [
   {
     Header: "Name",
@@ -13,10 +15,13 @@ export const COLUMNS = [
   },
   {
     Header: "Pin",
-    accessor: "pin",
+    accessor: "pinNum",
   },
   {
     Header: "Date",
     accessor: "createdAt",
+    Cell: ({ value }) => {
+      return moment(value).format("DD/MM/YYYY");
+    },
   },
 ];
