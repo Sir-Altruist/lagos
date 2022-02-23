@@ -16,8 +16,6 @@ import { Checkbox } from "./Checkbox";
 import axios from "axios";
 import TableToolbar from "../TableTooltip";
 import { Box, Container } from "@mui/material";
-// import moment from "moment";
-import { v4 as uuidv4 } from "uuid";
 
 const BasicTable = () => {
   const [items, setItems] = useState([]);
@@ -34,7 +32,7 @@ const BasicTable = () => {
       }
     };
     getData();
-  }, [items.pin]);
+  }, [items.pinNum]);
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => items, [items]);
   const tableInstance = new useTable(
@@ -84,14 +82,27 @@ const BasicTable = () => {
   } = tableInstance;
   const { globalFilter, pageIndex, pageSize } = state;
 
-  const generatePin = () => {
-    console.log(
-      selectedFlatRows.map((single) => {
-        const pins = { id: single.original._id, pin: uuidv4().substring(0, 5) };
-        return pins;
-      })
-    );
+  const generatePin = async () => {
+    try {
+      // navigate("/admin");
+      const body = selectedFlatRows.map((single) => {
+        const layout = { id: single.original._id };
+        return layout;
+      });
+      const headers = {
+        "Content-Type": "application/json",
+      };
+
+      const res = await axios.patch("http://localhost:5000/pin", body, headers);
+      if (res) {
+        console.log(res);
+        window.location.reload();
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   return (
     <Box component={"div"} style={{ padding: "5rem 0" }}>
       <Container>

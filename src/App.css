@@ -102,6 +102,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.landing {
+  min-height: 130vh;
+}
 .model {
   width: 100%;
   min-height: 160vh;
@@ -135,7 +138,7 @@
 }
 .landing-card {
   width: 50%;
-  min-height: 60vh;
+  min-height: 75vh;
   margin: 3rem auto;
   border: 2px solid green;
 }
@@ -160,17 +163,30 @@
   border: 1px solid #34a56f;
 }
 
-.landing-btn {
+.landing-bece,
+.landing-junior,
+.landing-model,
+.landing-service,
+.landing-bulk {
   width: 10rem;
   height: 5rem;
-  background-color: #7f77d8 !important;
+  background-color: #34a56f !important;
   font-weight: bold !important;
   text-transform: inherit !important;
 }
-.landing-btn:hover,
-.landing-link:hover {
-  background-color: #6056d7 !important;
+.landing-junior {
+  background-color: #368bc1 !important;
 }
+.landing-model {
+  background-color: #17202a !important;
+}
+.landing-service {
+  background-color: #151b54 !important;
+}
+.landing-bulk {
+  background-color: teal !important;
+}
+
 .landing-link {
   color: #ffffff;
   text-decoration: none;
@@ -262,7 +278,7 @@
     min-height: 150vh !important;
   }
   .landing {
-    min-height: 170vh !important;
+    min-height: 200vh !important;
   }
   .bece-update {
     width: 100%;
@@ -274,11 +290,15 @@
   }
   .landing-card {
     width: 100%;
-    min-height: 70vh !important;
+    min-height: 80vh !important;
     border: 2px solid green;
     margin-bottom: 5rem !important;
   }
-  .landing-btn {
+  .landing-bulk,
+  .landing-bece,
+  .landing-junior,
+  .landing-model,
+  .landing-service {
     margin-bottom: 2rem !important;
   }
   .bece-card,
